@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Pacifico';
+}
+nav {
+    width: 100%;
+    display: flex;    
+    padding: 0% 10%;
+    background-color: white;
+    flex-direction: row;
+    position: fixed;
+    align-items:center; 
+    font-family: 'Pacifico';
+    height: 10vh;
+    z-index: 10;
+    transition:all .5s; 
+    justify-content: space-between;
+    box-shadow:5px 5px 3px rgb(204, 204, 204);
+}
+nav .logo {
+    font-family: 'Pacifico', cursive  !important;
+}
+nav .logo span{
+    color: #EBA300;
+}
+nav ul{
+     display: inline-block;
+}
+nav ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+nav a{
+    text-decoration:none;
+    color: black;
+    font-size:18px;
+    padding: 20px 0%;
+    transition: all 0.2s ;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+.headerpage{
+    width: 100%;
+    background-image: url('lux-images/person/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+        height:100vh;
+    padding: 10% 10%;
+    transition:background-image 0.5s ease-in;
+}
+.menu{
+    z-index: 1000;
+}
+.headerpage-container{
+    padding-top: 8%;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    color: white;
+}
+.headerpage .textleft{
+    flex-basis: 50%;
+}
+.headerpage-container .textleft h1{
+    font-size:3em;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+
+}
+.headerpage-container .textleft a{
+    padding:10px 30px;
+    background-color:black;
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-family: Poppins;
+    
+}
+.headerpage-container .textleft p{
+    margin-bottom: 20px;
+    font-family: Poppins;
+
+}
+.headerpage .imgright{
+    flex-basis: 60%;
+}
+.headerpage .imgright img{
+    width: 500px;
+    height: 400px;
+}
+/*container*/
+.container{ 
+    padding:4% 10%;
+    display: flex;
+    flex-direction:column;
+    
+}
+.container .topprodects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.container .topprodects .box{
+    width:300px;
+    height:300px;
+    transition: transform 0.5s;
+}
+.container .topprodects .box:hover{
+    transform: scale(1.1);
+}
+.container .topprodects .box .imgbox{
+    width: 100%;
+    height:100%;
+    position:relative;
+}
+.container .topprodects .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .title{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding:2% 10%;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding:5% 0%;
+    flex-direction: column;
+}
+.title hr{
+    width:100px;
+    height:5px;
+    border: none;
+    background-color: black;  
+}
+
+.container .title hr{
+    width:100px;
+    height:5px;
+    border: none;
+    background-color: black;  
+}
+.featuredprodects{
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    justify-content:center;
+    flex-direction:row;
+    grid-gap: 10px ;
+    flex-wrap: wrap;
+    
+}
+.featuredprodects .box{
+    width:250px;
+    cursor: pointer;
+    height: 600px;
+    transition:transform 0.5s;
+}
+.featuredprodects .box:hover{
+    transform: scale(1.05);
+}
+.featuredprodects .box .imgbox{
+    width: 100%;
+    height:400px;
+    position: relative;
+}
+.featuredprodects .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.offerprodect{
+    background-color: black;
+    padding: 5% 20%;
+    color: white;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.offerprodect .imgleft{
+    flex-basis: 50%;
+}
+.offerprodect .imgleft img{
+    width:300px;
+    height:300px;
+}
+.offerprodect .textright{
+    flex-basis: 60%;
+}
+.offerprodect .textright h1{
+    font-size:3em;
+    font-family: Pacifico;
+}
+.offerprodect .textright p,.offerprodect .textright h4{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: Poppins;
+
+}
+.offerprodect .textright a{
+    padding: 10px 30px;
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    border-radius: 20px;
+    font-family: Poppins;
+
+}
+span{
+    color:blue;
+}
+.customers{
+    padding:5%;
+}
+.customers-container{
+    display: flex;
+    grid-gap: 50px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.customers-container .box{
+    padding: 10px;
+    text-align: center;
+    width:300px;
+    box-shadow: 5px 10px 20px grey;
+    transition: transform 0.5s;
+}
+.customers-container .box:hover{
+    transform: scale(1.05);
+}
+.customers-container .box .imgbox img{
+    border-radius: 50%;
+}
+.sponsors{
+    padding:5%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+    grid-gap:20px;
+}
+.sponsors .box{
+    width:20% ;
+    height:200px;
+}
+.sponsors .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.sponsors img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+    transition: all 0.5s;
+
+}
+.sponsors img:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+footer{
+    padding-top: 5%;
+    width: 100%;
+    font-family: Poppins;
+}
+footer .row{
+    display: flex;
+    flex-direction: row;
+    padding:5% 10% ;
+    justify-content: center;
+    background-color: black;
+    font-family: Poppins;
+
+}
+footer .row .col{
+    font-size: 15px;
+    text-align: center;
+    margin-right: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    flex-basis: 25%;
+}
+p{
+    font-family: Poppins;
+}
+footer .row .col h3{
+    font-family: Poppins;
+    font-size: 18px;
+    margin-bottom:20px;
+}
+.col img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.app{
+    display: flex;
+    flex-direction:row;
+}
+.app img{
+    margin-top: 20px;
+    width: 50% ;
+}
+
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* gallery*/
+.pictures{
+    display:flex;
+    padding:10px;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 2% 0%;
+    height:3200px;
+}
+.pictures .pic{
+    width: 35%;
+    height: 500px;
+    box-sizing:border-box;
+     padding: 10px;
+     cursor: pointer;
+}
+.pictures .pic .imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.pictures .pic .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pictures .pic1{
+    width: 30%;
+    height: 600px;
+    box-sizing:border-box;
+     padding: 10px;
+     cursor: pointer;
+}
+.pictures .pic1 .imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.pictures .pic1 .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pictures .pic2{
+    width: 30%;
+    height: 400px;
+    box-sizing:border-box;
+     padding: 10px;
+     cursor: pointer;
+}
+.pictures .pic2 .imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.pictures .pic2 .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pic1:hover,.pic2:hover,.pic:hover{
+    transform: scale(1.05);
+}
+.menu{
+    display:none;
+}
+@media screen and (max-width: 500px){
+    .headerpage-container{
+        text-align: center;
+        flex-direction: column;
+    }
+    .headerpage-container .textleft h1{
+        font-size: 2em;
+    }
+    nav ul li {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center; 
+
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul{
+        display:none;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        z-index: 2;
+        background-color: white;
+        width: 100%;
+      
+    }
+    .offerprodect{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .offerprodect .textright{
+        margin-top: 20px;
+    }
+    .offerprodect .textright h1{
+        font-size:2em;
+    }
+    .sponsors{
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .row{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .row .col{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    footer .row .col h3{
+        font-size: 2em;
+    }
+    nav .logo{
+        width: 100px;
+    }
+    body{
+        overflow-x: hidden;
+
+    }
+}
+@media screen and (max-width: 900px){
+    .headerpage-container{
+        text-align: center;
+        flex-direction: column;
+    }
+    .headerpage-container .textleft h1{
+        font-size: 2em;
+    }
+    nav ul li {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center; 
+
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul{
+        display:none;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        z-index: 2;
+        background-color: white;
+        width: 100%;
+      
+    }
+    .offerprodect{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .offerprodect .textright{
+        margin-top: 20px;
+    }
+    .offerprodect .textright h1{
+        font-size:2em;
+    }
+    .sponsors{
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .row{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .row .col{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    footer .row .col h3{
+        font-size: 2em;
+    }
+    nav .logo{
+        width: 100px;
+    }
+    body{
+        overflow-x: hidden;
+
+    }
+}
