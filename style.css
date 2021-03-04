@@ -6,6 +6,9 @@
     margin: 0;
     font-family: 'Pacifico';
 }
+body{
+    overflow-x: hidden;
+}
 nav {
     width: 100%;
     display: flex;    
@@ -406,12 +409,36 @@ footer .row .col h3{
 }
 .pic1:hover,.pic2:hover,.pic:hover{
     transform: scale(1.05);
+    transition:all 0.5s ease-in;
 }
 .menu{
     display:none;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .pictures .pic{
+        width: 100%;
+    }
+    .pictures .pic1{
+        width: 100%;
+    }
+    .pictures .pic2{
+        width: 100%;
+    }
+    .headerpage{
+        background-position: center center;
+    }
+    nav .logo{
+ position: fixed;
+        left:50% ;
+        min-width: 100%;    }
     .headerpage-container{
+        height: 70vh;
+        padding-top: 50%;
         text-align: center;
         flex-direction: column;
     }
@@ -425,6 +452,9 @@ footer .row .col h3{
         justify-content:center;
         align-items:center; 
 
+    }
+    nav{
+        width: 100%;
     }
     .menu{
         display: block;
@@ -444,12 +474,16 @@ footer .row .col h3{
         text-align: center;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .offerprodect .textright{
         margin-top: 20px;
     }
     .offerprodect .textright h1{
-        font-size:2em;
+        font-size:1.8em;
+    }
+    .offerprodect .textright p{
+        font-size: 0.9em;
     }
     .sponsors{
         justify-content:center;
@@ -457,16 +491,22 @@ footer .row .col h3{
         display: flex;
         flex-direction: column;
     }
+    .sponsors .box{
+        width: 100%;
+    }
     footer .row{
+        text-align:center;
         justify-content: center;
-        align-items: center;
         display: flex;
         flex-direction: column;
     }
 
     footer .row .col{
+        width: 100%;
         justify-content: center;
         align-items: center;
+        display:flex;
+        flex-direction:column;
         margin-top: 20px;
     }
     footer .row .col h3{
@@ -479,14 +519,30 @@ footer .row .col h3{
         overflow-x: hidden;
 
     }
+   .title{
+       font-size: 1.1em;
+       padding: 0;
+   }
+ 
 }
-@media screen and (max-width: 900px){
+@media screen and (min-width: 601px) and (max-width:1100px){
+    .headerpage{
+        background-position: center center;
+    }
+    
+    nav .logo{
+        font-size: 25px;
+ position: fixed;
+        left: 60% ;
+        min-width: 100%;    }
     .headerpage-container{
+        height: auto;
+        padding-top: 15%;
         text-align: center;
         flex-direction: column;
     }
     .headerpage-container .textleft h1{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     nav ul li {
         margin-bottom: 20px;
@@ -495,6 +551,9 @@ footer .row .col h3{
         justify-content:center;
         align-items:center; 
 
+    }
+    nav{
+        width: 100%;
     }
     .menu{
         display: block;
@@ -514,6 +573,7 @@ footer .row .col h3{
         text-align: center;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .offerprodect .textright{
         margin-top: 20px;
@@ -521,22 +581,26 @@ footer .row .col h3{
     .offerprodect .textright h1{
         font-size:2em;
     }
-    .sponsors{
-        justify-content:center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+    .offerprodect .textright p{
+        font-size: 1em;
+    }
+    .sponsors .box{
+        width: 30%;
     }
     footer .row{
+        text-align:center;
         justify-content: center;
-        align-items: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     footer .row .col{
+        width: 40%;
         justify-content: center;
         align-items: center;
+        display:flex;
+        flex-direction:column;
         margin-top: 20px;
     }
     footer .row .col h3{
@@ -549,4 +613,28 @@ footer .row .col h3{
         overflow-x: hidden;
 
     }
+   .title{
+       font-size: 1.1em;
+       padding: 0;
+   }
+   .pictures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+.pictures .pic{
+    width: 50%;
+    height: 600px;
+}
+.pictures .pic1{
+    width: 50%;
+    height: 600px;
+
+}
+.pictures .pic2{
+    width: 50%;
+    height: 600px;
+
+}
 }

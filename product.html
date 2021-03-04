@@ -11,6 +11,25 @@
     <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+    <style>
+      .container .title{
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+      }
+      @media screen and (max-width: 600px){
+       .container .title{
+         padding-top: 20%;
+         padding-bottom: 5%;
+       }
+      }
+      @media screen and (min-width: 601px) and (max-width:1100px){
+        .container .title{
+          padding-top: 10%;
+          padding-bottom: 5%;
+        }
+      }
+    </style>
 </head>
 <body>
     <nav>
@@ -25,7 +44,7 @@
         <img src="menu-black-48dp.svg" class="menu" id="menu" alt="">
        </nav> 
     <div class="container">
-      <div class="title" style="padding: 5% 0;">
+      <div class="title">
        <h1>Our Products 😍</h1>
        <hr /></div>
        <div class="featuredprodects">
